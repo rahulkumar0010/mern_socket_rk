@@ -1,0 +1,111 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #111b21;
+  color: white;
+}
+
+.sidenav_container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202c33;
+  color: #aebac1;
+  height: 60px;
+}
+
+.profile_img_div {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile_img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 50%;
+}
+
+.search_container {
+  margin: 5px 0px;
+  width: 100%;
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+
+.input_div {
+  border-radius: 5px;
+  background-color: #202c33;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.search_input {
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: #202c33;
+  color: white;
+  outline: 0;
+}
+.search_input::placeholder {
+  color: #8696a0;
+}
+
+.user_container {
+  padding: 5px;
+  margin: 0px 10px;
+  /* background-color: #202c33; */
+  /* border-radius: 5px; */
+  cursor: pointer;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+.user_container:hover {
+  background-color: #202c33;
+  border-radius: 5px;
+}
+.active_user{
+  background-color: #243036;
+  border-radius: 5px;
+}
+
+.profile_img_div {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.userprofile_img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.name_profile {
+  display: flex;
+}
+.username_div {
+  margin-left: 20px;
+  margin-top: 3px;
+}
+.username p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.last_message p {
+  font-size: 12px;
+}
+
+.active_div p {
+  font-size: 12px;
+  margin-right: 5px;
+  color: #aebac1;
+}

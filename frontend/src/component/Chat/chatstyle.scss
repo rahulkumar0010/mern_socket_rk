@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #00000080;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000000cc;
+}
+
+.messages {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+
+  padding: 1em;
+  overflow: auto;
+
+  .time {
+    width: fit-content;
+    font-size: 0.75em;
+
+    margin: 0 auto;
+    padding: 0.5em;
+
+    border-radius: 6px;
+    background: #00000020;
+  }
+
+  .msg-text {
+    width: fit-content;
+    font-size: 0.85em;
+
+    animation: appear-msg ease 0.25s forwards;
+
+    .text {
+      display: block;
+      padding: 0.75em;
+      border-radius: 0.75em 0.75em 0.75em 0;
+      background: #aebac1;
+      box-shadow: 0 2px 0 #00000020;
+      color: #202c33;
+      width: 200px;
+      position: relative;
+      overflow-wrap: break-word;
+    }
+    .image {
+      // border-radius: 0.75em 0.75em 0 0.75em;
+      height: 213px;
+      width: 217px;
+      position: relative;
+      .img_msg_date {
+        position: absolute;
+        right: 10px;
+        bottom: 2px;
+        object-fit: fill;
+      }
+    }
+    .image img {
+      border-radius: 0.75em 0.75em 0 0.75em;
+    }
+    .audio {
+      height: 45px;
+      position: relative;
+      color: #aebac1;
+      background: #dddddd;
+      border-radius: 0.75em 0.75em 0 0.75em;
+      padding: 3px 4px;
+
+      .img_msg_date {
+        position: absolute;
+        right: 10px;
+        bottom: 2px;
+        object-fit: fill;
+        color: black;
+      }
+    }
+
+    &.owner {
+      margin-left: auto;
+      .text {
+        color: #aebac1;
+        // background: #057ef7;
+        background: #202c33;
+        border-radius: 0.75em 0.75em 0 0.75em;
+      }
+      .image {
+        height: 213px;
+        width: 217px;
+        position: relative;
+        .img_msg_date {
+          position: absolute;
+          right: 10px;
+          bottom: 2px;
+        }
+      }
+      .image img {
+        border-radius: 0.75em 0.75em 0 0.75em;
+      }
+      .audio {
+        height: 45px;
+        position: relative;
+        color: #aebac1;
+        background: #dddddd;
+        border-radius: 0.75em 0.75em 0 0.75em;
+        padding: 3px 4px;
+        .img_msg_date {
+          position: absolute;
+          right: 10px;
+          bottom: 2px;
+          object-fit: fill;
+          color: #202c33;
+        }
+      }
+    }
+  }
+}
+
+.audio audio {
+  filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+
+  height: 25px;
+}
+
+.msg_date {
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
+}
+
+.recordingContainer {
+  background-color: #3b4a54;
+  width: 85%;
+  border-radius: 10px;
+  padding: 10px;
+}

@@ -1,0 +1,81 @@
+.edit_header {
+  height: 100px;
+  position: relative;
+}
+.update_field_sec {
+  background-color: #111b21;
+  height: 85vh;
+  padding: 20px 15px;
+}
+.img_div {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+}
+
+.img_edit {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 50%;
+}
+
+.arrow_header {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.arrow_header p {
+  font-size: inherit;
+  font-weight: bold;
+  color: #d9dee0;
+  margin-left: 15px;
+}
+.name_div {
+  margin-top: 15px;
+}
+.name_div p {
+  color: #008069;
+}
+
+.name_div input {
+  margin-top: 20px;
+}
+
+.about_div {
+  margin-top: 30px;
+}
+.about_div p {
+  color: #008069;
+}
+
+.about_div input {
+  margin-top: 20px;
+}
+
+.change_photo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+    cursor: pointer;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50%;
+}
+.hide{
+  display: none;
+}
+.img_div:hover .hide{
+  display: flex;
+}

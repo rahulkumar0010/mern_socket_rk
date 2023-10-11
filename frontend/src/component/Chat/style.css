@@ -1,0 +1,125 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #3b4a54;
+  color: white;
+}
+
+.chatnav_container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202c33;
+  color: #aebac1;
+  height: 60px;
+}
+
+.welcome_bot_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome_bot_container h1 {
+  color: #aebac1;
+}
+.welcome_bot_div {
+  text-align: center;
+  height: 250px;
+  width: 250px;
+}
+.welcome_bot_img {
+  height: 100%;
+  width: 100%;
+}
+
+.profile_img_div {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.userprofile_img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.name_profile {
+  display: flex;
+}
+.username_div {
+  margin-left: 20px;
+  margin-top: 3px;
+}
+.username p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.last_message p {
+  font-size: 12px;
+}
+
+.search_menu {
+  display: flex;
+  align-items: center;
+}
+
+.chat_bottom_container {
+  width: 66.5%;
+  background-color: rgb(32 44 51);
+  position: absolute;
+  bottom: 1px;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* .emoji_icon{
+    
+} */
+.chat_input_div {
+  border-radius: 5px;
+  background-color: #202c33;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.chat_input {
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: #2a3942;
+  color: white;
+  outline: 0;
+  font-size: 15px;
+}
+
+.chat_input::placeholder {
+  color: #8696a0;
+}
+
+.message_container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  padding: 0px 10px;
+  top: 1px;
+  
+}
+
+.status{
+  display: flex;
+  align-items: center;
+  
+}
+.status p{
+  font-size: 13px;
+}
